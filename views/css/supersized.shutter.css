@@ -1,0 +1,233 @@
+/*
+
+Supersized - Fullscreen Slideshow jQuery Plugin
+Version : 3.2.5
+Site : www.buildinternet.com/project/supersized
+
+Theme : Shutter 1.1
+Author : Sam Dunn
+Company : One Mighty Roar (www.onemightyroar.com)
+License : MIT License / GPL License
+
+*/
+
+/* Controls Bar
+----------------------------*/
+#controls-wrapper {
+	margin: 0 auto;
+	height: 42px;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	z-index: 4;
+	background: url(http://demo.themedev.me/site_templates/jdoe/images/ss/nav-bg.png) repeat-x;
+	position: fixed;
+}
+#controls {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	text-align: left;
+	z-index: 5;
+}
+#slidecounter {
+	float: left;
+	color: #999;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: #000 0 -1px 0;
+	margin: 0px 10px 0 15px;
+	line-height: 42px;
+}
+#slidecaption {
+	color:#ffffff;
+}
+
+#slidecaption {
+	position: fixed;
+	right: 80px;
+	bottom: 80px;
+	padding: 0;
+	width: 860px;
+	font-size: 15px;
+	line-height: 18px;
+	display:block!important;
+}
+#slidecaption h1 { display:block; float:right; font-size:80px; line-height:85px; background:url(../img/bg_caption.png) repeat; color:#ffffff; margin:0 0 9px 0; padding:0 2px; font-family:'Dosis', sans-serif;}
+#slidecaption h1 span { font-size:80px; line-height:85px; color:#ffea00; padding:0; font-family:'Dosis', sans-serif;}
+#slidecaption br { clear:both; display:block;}
+#slidecaption p {display:block; float:right; font-size:30px; line-height:30px; background:url(../img/bg_caption.png) repeat; color:#ffffff; margin-bottom:2px; font-family:'Dosis', sans-serif; padding:1px 2px; text-transform:uppercase}
+
+#navigation {
+	float: right;
+	margin: 0px 20px 0 0;
+}
+
+#prevslide, #nextslide {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	top: 50%;
+	margin-top: -15px;
+	opacity: 0.6;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+#prevslide:hover, #nextslide:hover {	
+	opacity: 1;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+#prevslide {
+	left: 85px;
+	background: url('../img/gallery_prev.png');
+}
+#nextslide {
+	right: 85px;
+	background: url('../img/gallery_next.png');
+}
+#prevslide:active, #nextslide:active {
+	margin-top: -15px;
+}
+#prevslide:hover, #nextslide:hover {
+	cursor: pointer;
+}
+
+ul#slide-list {
+	padding: 15px 0;
+	float: left;
+	position: absolute;
+	left: 50%;
+}
+ul#slide-list li {
+	list-style: none;
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 0 5px 0 0;
+}
+ul#slide-list li.current-slide a, ul#slide-list li.current-slide a:hover {
+	background-position: 0 0px;
+}
+ul#slide-list li a {
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url('http://demo.themedev.me/site_templates/jdoe/images/ss/nav-dot.png') no-repeat 0 -24px;
+}
+ul#slide-list li a:hover {
+	background-position: 0 -12px;
+	cursor: pointer;
+}
+
+#tray-button {
+	float: right;
+	margin-top: 1px;
+	border-left: 1px solid #333;
+	background: url('http://demo.themedev.me/site_templates/jdoe/images/ss/bg-hover.png') repeat-x 0 44px;
+}
+#tray-button:hover {
+	background-position: 0 1px;
+	cursor: pointer;
+}
+
+
+/* Progress Bar
+----------------------------*/
+#progress-back {
+	z-index: 10;
+	position: fixed;
+	right: 35px;
+	top : 0px;
+	width: 2px;
+	height: 100%;
+	background: #000000;
+}
+#progress-bar {
+	position: relative;
+	height: 2px;
+	height: 100%;
+	background: #ffea00;
+}
+
+
+/* Thumbnail Navigation
+----------------------------*/
+#nextthumb,#prevthumb {
+	z-index: 2;
+	display: none;
+	position: fixed;
+	bottom: 61px;
+	height: 75px;
+	width: 100px;
+	overflow: hidden;
+	background: #ddd;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0 0 5px #000;
+}
+#nextthumb {
+	right: 12px;
+}
+#prevthumb {
+	left: 12px;
+}
+#nextthumb img, #prevthumb img {
+	width: 150px;
+	height: auto;
+}
+#nextthumb:active, #prevthumb:active {
+	bottom: 59px;
+}
+#nextthumb:hover, #prevthumb:hover {
+	cursor: pointer;
+}
+
+
+/* Thumbnail Tray
+----------------------------*/
+#thumb-tray {
+/*	position: fixed;*/
+	z-index: 3;
+	bottom: none;
+/*	left: 0;*/
+/*	background: url(http://demo.themedev.me/site_templates/jdoe/images/ss/bg-black.png);*/
+/*	height: 150px;*/
+/*	width: 100%;*/
+	overflow: hidden;
+	text-align: center;
+}
+
+#thumbs-scroller { width:80px; position:absolute; left:-100px; overflow:hidden; top:70px;}
+ul#thumb-list {
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	left: 0px;
+	padding: 0 0px;
+	 width:80px!important; top:0;
+}
+ul#thumb-list li {
+	list-style: none;
+	display: block;
+/*	width: 150px;*/
+	height: 80px;
+	overflow: hidden;
+	float: none;
+	margin: 0 0 3px 0;
+	position:relative
+}
+ul#thumb-list li img {
+	width: 80px;
+	height: auto;
+}
+
+ul#thumb-list li:hover {
+	cursor: pointer;
+}
+ul#thumb-list li .list-border { display:none; width:74px; height:74px; border:#ffea00 3px solid; position:absolute; left:0; top:0}
+ul#thumb-list li.current-thumb .list-border { display:block}
+ul#thumb-list .current-thumb .gsCanvas { display:none}
+#gallery_overlay { background:url(../img/bg_overlay.png) repeat; z-index:-10; position:absolute; width:100%; height:100%; left:0; top:0}
+
+#pauseplay { background:url(../img/gallery_play.png) no-repeat; position: absolute;	height: 30px; width: 30px; top: 50%; margin-top: -15px; opacity: 0.6; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); left:50%; margin-left:-15px; cursor:pointer}
+#pauseplay:hover { opacity: 1; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+#pauseplay.pause { background:url(../img/gallery_pause.png) no-repeat!important}
+
+.activeslide { background:#000000}

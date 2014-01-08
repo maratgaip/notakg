@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "userName" : "following1",
+        "name":"following1",
+        "lastname":"Gaipov",
+        "type":"user",
+        "thumbnail":"data/thumbnail/kanikey.jpeg"
+    },
+    {
+        "id":1,
+        "userName" : "following1",
+        "name":"following10",
+        "lastname":"Gaipov",
+        "type":"user",
+        "thumbnail":"data/thumbnail/omar.jpeg"
+    },
+    {
+        "id":1,
+        "userName" : "following1",
+        "name":"following7",
+        "lastname":"Gaipov",
+        "type":"user",
+        "thumbnail":"data/thumbnail/marattig.jpeg"
+    },
+    {
+        "id":1,
+        "userName" : "following1",
+        "name":"following3 ",
+        "lastname":"Gaipov",
+        "type":"user",
+        "thumbnail":"data/thumbnail/kanikey.jpeg"
+    }
+]

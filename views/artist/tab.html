@@ -1,0 +1,56 @@
+<div class="fluid" id="profile_page" ng-controller="TabCtrl">
+    <div class="widget grid12"  >
+        <tabset id="profile_tabset" >
+            <div class="tabbable">
+
+                <ul >
+
+                    <li ng-class="{active:isActive('/artist/kanikey')}" >
+                        <a href="#/artist/kanikey" >Профиль    {{ route }}</a>
+                    <li ng-class="{active:isActive('/artist/kanikey/song')}">
+                        <a href="#/artist/kanikey/song">Ыр</a>
+                    <li ng-class="{active:isActive('/artist/kanikey/fan')}">
+                        <a href="#/artist/kanikey/fan">Фанат</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </tabset>
+        <div id="profile_area">
+
+            <div id="profile_info">
+                <div id="profile_img">
+                    <img src="{{mediaResults.info.thumbnail}}" width="80" height="80">
+                </div>
+                <div class="profile_name">
+                    {{mediaResults.info.name +' ' + mediaResults.info.lastname}}
+                    <span>{{mediaResults.info.type}}</span>
+                </div>
+                <div class="numStats">
+                    <ul>
+                        <li><a title="">{{mediaResults.song.length}}</a><span>Ыр</span></li>
+                        <li class="last"><a title="">{{mediaResults.fan.length}}</a><span>Фан</span></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="float_right">
+                <div id="profile_info_social">
+                    <a class="buttonM bDefault"><span class="icos-play"></span><span>Ойнот</span></a>
+                    <a class="buttonM bDefault"><span class="icos-share"></span><span>Бөлүш</span></a>
+                    <a class="buttonM bDefault"><span class="iconb" data-icon=""></span><span>Жактыр</span></a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+<div style="height: 140px"></div>

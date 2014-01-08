@@ -1,0 +1,14 @@
+{
+    "id":1,
+    "userName" : "marattig",
+    "name":"Marat",
+    "lastName":"Gaipov",
+    "type":"user",
+    "thumbnail":"data/thumbnail/marattig.jpg",
+    "songLength" : 150,
+    "playlistLength" : 20,
+    "favoriteLength" : 30,
+    "followerLength" : 80,
+    "followingLength" : 46,
+    "biography":"оролгон. На свет вышла очередная песня Каныкей — «Мекеним Менин» (Родина моя — в переводе с кыргызского). Песня эта специально написана саундтреком к фильму «Салам Нью Йорк» премьера которого состоится 14 февраля в Бишкекских кинотеатрах. А пока наслаждайтесь пением Каныкей."
+}

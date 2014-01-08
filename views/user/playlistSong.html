@@ -1,0 +1,83 @@
+<div ng-include src="'views/user/tab.html'"></div>
+<div class="fluid" >
+    <div class="grid12" id="profile_songs">
+        <div class="widget">
+
+
+
+            <div class="whead " style="height: 25px;  padding-top: 5px; padding-left: 10px">
+                <h5 >{{ $routeParams.playlist }}</h5>
+                <div class="clear"></div></div>
+            <table cellpadding="0" cellspacing="0" width="100%" class="tDefault checkAll tMedia" id="checkAll">
+                <thead>
+
+                <tr>
+                    <td>
+
+                        <div class="btn-group blueBack" style="">
+                            <a class="buttonS " data-toggle="dropdown" ><div class="fs1 iconb" data-icon=""></div></a>
+                            <ul class="dropdown-menu">
+                                <li><a ><span class="icos-add"></span>Now</a></li>
+                                <li><a ><span class="icos-trash"></span>Next</a></li>
+                                <li><a ><span class="icos-pencil"></span>Last</a></li>
+                                <li><a ><span class="icos-pencil"></span>Add to Playlist</a></li>
+                            </ul>
+                        </div>
+
+                    </td>
+                    <td class="sortCol header"><div>Ыр<span></span></div></td>
+                    <td width="200">Actions</td>
+                    <td class="sortCol header"><div>Ырчы<span></span></div></td>
+                    <td class="sortCol header"><div>Альбом<span></span></div></td>
+
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <div class="float_right">
+                            <span class="uReport">
+														<a ng-show="!showMoreSongSpan" ng-click="showMoreSong()" >See More</a>
+                                <a ng-show="showMoreSongSpan" ng-click="showLessSong()" >See Less</a>
+													</span>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+                <tbody ng-repeat="item in currentUserPlaylist[0].songs  | limitTo : songLimit">
+                <tr >
+                    <td><div class="btn-group">
+
+                        <a ng-click="playVideo(item)" class="tablectrl_small cBlue" data-toggle="dropdown"><span class="fs1 iconb" data-icon=""></span></a>
+                    </div></td>
+                    <td style="width:300px" class="textL"><a  title="">{{item.trackName}}</a></td>
+                    <td style="width:300px; " class="tableActs">
+                        <a style="float:left" popover="Ырларыма кош" popover-trigger="mouseenter" class="tablectrl_small cGrey tipS"><div class="fs1 iconb" data-icon=""></div></a>
+                        <a style="float:left" popover="Жактыр" popover-trigger="mouseenter" class="tablectrl_small cGrey tipS"><div class="iconb" data-icon=""></div></a>
+                        <a style="float:left" popover="Плейлистке кош" popover-trigger="mouseenter" target="_blank" class="tablectrl_small cGrey tipS" >
+
+                            <div class="btn-group">
+                                <div class="fs1 iconb" data-icon="" bs-dropdown="addToPlaylistDropdown"></div>
+                            </div>
+                        </a>
+                        <a style="float:left" popover="Тушур" popover-trigger="mouseenter" target="_blank" href="{{ item.mp3 }}" class="tablectrl_small cGrey tipS" ><div class="fs1 iconb" data-icon=""></div></a>
+                        <div ng-click="isCollapsed = !isCollapsed" style="float:left">
+                            <a popover="Lyrics" popover-trigger="mouseenter"  class="tablectrl_small cGrey tipS" ><div class="fs1 iconb" data-icon=""></div></a>
+                        </div>
+                    </td>
+                    <td style="width:300px" class="textL">{{ item.artistName }}</td>
+                    <td style="width:300px" class="textL">{{item.album}}</td>
+ </tr>
+                <tr ><td colspan="5" style="max-width: 1000px; ">
+
+                             <div  collapse="!isCollapsed">
+                                <div  style="padding: 10px 50px;">{{item.lyrics}}</div>
+                             </div>
+
+
+                </td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div ng-include src="'views/user/tab.html'"></div>
+
+<div ng-repeat="follower in currentUserFollower">
+    <a href="#/user/{{  follower.userName}}">{{  follower.name}}</>
+</div>
+

@@ -1,0 +1,33 @@
+.filter_navigation	{ padding:0px; margin:0 0 30px 0; position:relative; z-index:50; height:22px; width:790px; overflow:hidden}
+.filter_navigation	a.filter_toggle { position:absolute; left:0; top:0; width:66px; height:22px; display:block; font-size:13px; line-height:22px; color:#000; text-align:center; z-index:60; background:#ffea00}
+.filter_navigation	a.filter_toggle span { position:absolute; right:-10px; top:0; background:url(../img/bg_filter_arrow.png) no-repeat; width:11px; height:22px; display:block; z-index:60}
+.filter_navigation	a.filter_toggle:hover { text-decoration:none}
+.filter_navigation	ul { overflow:hidden; margin:0; padding:0; width:790px;  z-index:53; position:absolute; left:0; top:0}
+.filter_navigation	ul li { padding:0px; float:left; margin:0 1px 0 0; background:#797979}
+.filter_navigation	ul li:first-child { padding-left:81px} 
+.filter_navigation	ul li a { color:#000000; text-decoration:none; font-size:13px; line-height:22px; padding:0 6px; display:block}
+.filter_navigation	ul li.selected a { color:#ffffff; text-decoration:none}
+.filter_navigation	ul li a:hover { text-decoration:none; color:#ffea00}
+
+.image-grid { overflow:hidden}
+.image-grid li { background:none; overflow:hidden}
+
+.columns1 li { margin:0 0 23px 0; padding:0; overflow:hidden; height:auto; display:block; min-height:230px}
+.columns1 li div.text { text-align:justify; float:left; width:380px}
+.columns1 li div.text h3 { margin-top:0}
+.columns1 li div.text p { margin-bottom:15px;}
+.columns1 li iframe { float:left; margin:1px 20px 0 0}
+
+.columns2 li { margin:0 10px 10px 0; padding:0; overflow:hidden; display:block; float:left; width:385px; min-height:230px}
+.columns3 li { margin:0 7px 7px 0; padding:0; overflow:hidden; display:block; float:left; width:256px; min-height:190px;}
+
+.masonry li { margin:0 11px 10px 0; padding:0; overflow:hidden; display:block; float:left; }
+
+.portfolio_wrapper { float:left; position:relative; margin:1px 20px 0 0; display:block}
+.portfolio_wrapper .portfolio_overlay { background:url(../img/bg_portfolio_wrapper.png) repeat; width:100%; height:100%; position:absolute; left:0; top:0; display:none}
+.portfolio_wrapper .img_descr { position:absolute; top:120px; width:100%; text-align:center;}
+.portfolio_wrapper .img_buttons { position:absolute; top:90px; text-align:center; width:100%}
+.portfolio_wrapper .img_buttons .btn_postlink { width:15px; height:15px; display:block; background:url(../img/btn_postlink.png) no-repeat top left; margin-right:17px; display:inline-block;}
+.portfolio_wrapper .img_buttons .btn_postlink:hover, .portfolio_wrapper .img_buttons .btn_zoom:hover { background-position:bottom}
+.portfolio_wrapper .img_buttons .btn_zoom { width:15px; height:15px; display:block; background:url(../img/btn_zoom.png) no-repeat top left; display:inline-block;}
+.masonry-brick .portfolio_wrapper { margin:0px!important}

@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "userName" : "Yoma",
+        "name":"Emil",
+        "lastname":"Gaipov",
+        "type":"user",
+        "time" : "3 saat murun",
+        "thumbnail":"data/thumbnail/kanikey.jpeg",
+        "text" : " la olym nbaapioyn lasda alsdk aklds alksjfh laskdjh adsj asdj faskjd flkasd fa ksjf lasd f"
+    },
+    {
+        "id":1,
+        "userName" : "Zam",
+        "name":"Zamir",
+        "lastname":"Gaipov",
+        "type":"user",
+        "time" : "3 saat murun",
+        "thumbnail":"data/thumbnail/marattig.jpg",
+        "text" : " la olym asd as  dasd a dm arjpa as;ohfd ashfl as f"
+    },
+    {
+        "id":1,
+        "userName" : "Aibeque",
+        "name":"Marat",
+        "lastname":"Gaipov",
+        "type":"user",
+        "time" : "2 saat murun",
+        "thumbnail":"data/thumbnail/omar.jpg",
+        "text" : " alkdj laskhfg a olym nbaapioyn lasda alsdk aklds alksjfh laskdjh adsj asdj faskjd flkasd fa ksjf lasd f"
+    }
+]

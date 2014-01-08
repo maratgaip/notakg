@@ -1,0 +1,222 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Nota.kg - Кыргыз музыкасы</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body ng-app="appsApp" ng-controller="IndexCtrl">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./components/es5-shim/es5-shim.js"></script>
+<script type="text/javascript" src="./components/json3/lib/json3.min.js"></script>
+<![endif]-->
+
+
+
+
+
+<script type="text/javascript" src="components/jquery/jquery.js"></script>
+<script type="text/javascript" src="components/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="components/angular/angular.js"></script>
+
+<script type="text/javascript" src="components/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="components/angular-cookies/angular-cookies.js"></script>
+<script type="text/javascript" src="components/angular-sanitize/angular-sanitize.js"></script>
+<script type="text/javascript" src="components/angular-grid/build/ng-grid.js"></script>
+<script type="text/javascript" src="components/angular-ui/build/angular-ui.js"></script>
+<script type="text/javascript" src="components/angular-ui/build/angular-ui.min.js"></script>
+<script type="text/javascript" src="components/angular-strap/angular-strap.min.js"></script>
+
+<link rel="stylesheet" href="components/angular-bootstrap/bootstrap.css" />
+
+ <script src="components/angular-bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
+
+<link href="components/angular-bootstrap/bootstrap-combined.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="views/css/styles.css" />
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="http://mgcrea.github.com/angular-strap/js/angular-strap.js"></script>
+
+<link href="http://mgcrea.github.com/angular-strap/css/prettify.css" rel="stylesheet">
+
+
+
+
+
+<!-- build:js scripts/scripts.js -->
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/connectAPI.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/profile.js"></script>
+    <script src="scripts/controllers/search.js"></script>
+    <script src="scripts/controllers/artist.js"></script>
+<script src="scripts/controllers/tab.js"></script>
+    <!-- endbuild -->
+ <div ng-controller="IndexCtrl">
+<!-- Header ============ -->	
+<div id="top">
+    <div class="wrapper">
+        <a href="#/" title="" class="logo"><img src="views/images/logo.png" alt="" /></a>
+
+
+    </div>
+    <div style="padding-top: 10px; margin-left: 300px">
+    <div class="input-append">
+        <input type="text" ng-model="value">
+        <button type="button" ng-click="search(value)" class="btn">Search</button>
+    </div>
+
+    <div class="float_right">
+        <a ng-hide="login" ng-click="open()">Sign In</a>
+        <button ng-hide="login" class="btn" ng-click="registerOpen()">Create Account</button>
+        <button ng-show="login" class="btn" ng-click="signOut()"><a href="#/">Sign Out</a></button>
+    </div>
+        </div>
+</div>
+<!-- Header ends -->
+	
+<!-- Sidebar begins -->
+<div id="sidebar" class="without">
+        <div class="secNav">
+        <div class="secWrapper">
+            
+            <!-- Tabs container -->
+            <div id="tab-container" class="tab-container">
+                <ul class="iconsLine ">
+                    <li><a href="#general" title=""></a></li>
+                </ul>
+                
+                <div id="general">
+                    <ul class="subNav">
+                        <li ng-show="login"><a href="#/user/{{ username }}" title=""><span class="icos-images2"></span>My Profile</a></li>
+                        <li><a href="#/songs" title=""><span class="icos-images2"></span>Ырлар</a></li>
+                        <li><a href="#/radio" title=""><span class="icos-create"></span>Радио</a>
+                       
+                        </li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+            <div class="divider2"><span></span></div>
+        
+
+        	<!-- Sidebar buttons -->
+            <div class="fluid sideWidget">
+                <div ><input type="submit" class="buttonS bDefault" value="Share Profile" /></div>
+                <p/>
+                <div ><input type="submit" class="buttonS bDefault" value="Invite Friends" /></div>
+            </div>
+            
+            </div>
+        <div class="clear"></div>
+   </div>
+   </div>
+<!-- Sidebar ends -->
+
+<!-- Content
+============= -->
+
+
+	<div id="content" >
+        <div modal="shouldBeOpen" close="close()" options="opts">
+            <form ng-hide="register || passwordReset" name="loginForm" class="css-form" novalidate>
+                <div class="modal-header">
+                    <h3>Sign In</h3>
+                </div>
+                <div class="modal-body login">
+                        <input ng-required="true" class="input-lg" ng-model="username" type="text" placeholder="Username or Email" /><br/>
+                        <input ng-required="true" class="input-lg" type="password" placeholder="Password" /><br/>
+                        <div><a ng-click="passwordReset=true"><b>Forgot your Password?</b></a></div>
+                    <div>Don't have an account? <a ng-click="register=true"><b>Sign up</b></a></div>
+                </div>
+                <div class="modal-footer login">
+                    <button  ng-disabled="loginForm.$invalid" class="btn btn-success" ng-click="signIn()">Sign In</button>
+                </div>
+            </form>
+            <form ng-show="register"  name="registerForm" class="css-form" novalidate>
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="modal-body login">
+                    <div>
+                        <input ng-required="true" class="input-lg" ng-model="regUsername" name="username" type="text" placeholder="Username" /><br/>
+                        <input ng-required="true" class="input-lg" type="password" name="password" placeholder="Password" /><br/>
+                        <input ng-required="true" name="uEmail"  class="input-lg" ng-model="regEmail" type="email" placeholder="Email" /><br/>
+                        <span class="alert alert-danger" ng-show="registerForm.uEmail.$error.email">This is not a valid email.</span>
+                        <div>Already have an account? <a ng-click="register=false"><b>Log in</b></a></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer login">
+                    <button  ng-disabled="registerForm.$invalid" ng-show="register" class="btn btn-success" ng-click="signUp()">Sign Up</button>
+                </div>
+            </form>
+            <form ng-show="passwordReset && !register"  name="passwordForm" class="css-form" novalidate>
+                <div class="modal-header">
+                    <h3>Password Reset</h3>
+                    <div>Enter your username, or the email address that you used to register. We'll send you an email with your username and a link to reset your password.</div>
+                </div>
+                <div class="modal-body login">
+                    <div>
+                        <input ng-required="true" class="input-lg" ng-model="sendUsername" name="username" type="text" placeholder="Username or Email" /><br/>
+                        <div> <a ng-click="passwordReset=false"><b>Go back</b></a></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer login">
+                    <button  ng-disabled="passwordForm.$invalid" class="btn btn-success" ng-click="signUp()">Send</button>
+                </div>
+            </form>
+        </div>
+    <div class="container" ng-view></div>
+	</div>
+
+<!-- Footer
+============ -->
+
+	<footer>
+
+        <div>
+                <span>{{title | capitalize}}</span>
+
+                <small>by <cite>{{artist}}</cite></small>
+
+            <audio id="vid" style="width:100%" height="240" video-loader autoplay controls>
+                <source id="vidsrc" ng-src="url" type="video/mp4">
+            </audio>
+        </div>
+
+
+
+
+
+    </footer>
+  	
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

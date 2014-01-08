@@ -1,0 +1,607 @@
+[{
+    "info":{
+        "id":1,
+        "uniqueName" : "kanikey",
+        "name":"Каныкей",
+        "lastname":"Алымбекова",
+        "type":"Ырчы",
+        "thumbnail":"data/thumbnail/kanikey.jpeg",
+        "biography":"Каныкей Алымбекова 1987 жылы 16 октябрда Токмок шаарында торолгон. На свет вышла очередная песня Каныкей — «Мекеним Менин» (Родина моя — в переводе с кыргызского). Песня эта специально написана саундтреком к фильму «Салам Нью Йорк» премьера которого состоится 14 февраля в Бишкекских кинотеатрах. А пока наслаждайтесь пением Каныкей."
+    },
+    "song":
+        [
+            {
+                "id": 1,
+                "mp3":"http://media.super.kg/media/audio/a_90931.mp3",
+                "trackName":"Nege mmm",
+                "album":"", "artistName":"Kani",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "id": 1,
+                "mp3":"http://media.super.kg/media/audio/a_88521.mp3",
+                "trackName":"????? ????, ??????",
+                "album":"", "artistName":"????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "id": 2,
+                "mp3" : "http://media.super.kg/media/audio/a_90923.mp3",
+                "trackName" : "Gorod",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "id": 3,
+                "mp3":"http://media.super.kg/media/audio/a_91155.mp3",
+                "trackName":"Esimde(folk)",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+
+            },
+            {
+                "id": 4,
+                "mp3":"http://media.super.kg/media/audio/a_87771.mp3",
+                "trackName":"Turnalar",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "id": 5,
+                "mp3":"http://media.super.kg/media/audio/a_86493.mp3",
+                "trackName":"Nege sen?",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_231.mp3",
+                "id":6,
+                "trackName":"Zaman",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_85461.mp3",
+                "id":7,
+                "trackName":"Kyrgyzstan",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_81277.mp3",
+                "id":8,
+                "trackName":"Mekenim menin",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_79665.mp3",
+                "id":9,
+                "trackName":"Sadagam",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_78373.mp3",
+                "id":10,
+                "trackName":"Ak kepterim",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_77219.mp3",
+                "id":11,
+                "trackName":"Super Info",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_76289.mp3",
+                "id":12,
+                "trackName":"Bilbepmin",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_69111.mp3",
+                "id":13,
+                "trackName":"Kopolok",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_62133.mp3",
+                "id":14,
+                "trackName":"Adashtym",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_58663.mp3",
+                "id":15,
+                "trackName":"Znayu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_48591.mp3",
+                "id":16,
+                "trackName":"Ruhun ozgur",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46837.mp3",
+                "id":17,
+                "trackName":"Sarala",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46583.mp3",
+                "id":18,
+                "trackName":"Kara chan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_45661.mp3",
+                "id":19,
+                "trackName":"Sen ekoobuz",
+                "album":"", "artistName":"???????"
+            },
+
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43665.mp3",
+                "id":20,
+                "trackName":"Suluuluk saktap kalay duynonu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43215.mp3",
+                "id":21,
+                "trackName":"Pulya",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_3391.mp3",
+                "id":22,
+                "trackName":"Jash karek",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_863.mp3",
+                "id":23,
+                "trackName":" Nosonte",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_411.mp3",
+                "id":24,
+                "trackName":" Jurok Syzdait",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_90919.mp3",
+                "id":25,
+                "trackName":"Mol Bulak",
+                "album":"", "artistName":"???????"
+            }
+        ],
+    "fan":
+        [
+            {
+                "mp3":"http://media.super.kg/media/audio/a_231.mp3",
+                "id":6,
+                "trackName":"Zaman",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_85461.mp3",
+                "id":7,
+                "trackName":"Kyrgyzstan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_81277.mp3",
+                "id":8,
+                "trackName":"Mekenim menin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_79665.mp3",
+                "id":9,
+                "trackName":"Sadagam",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_78373.mp3",
+                "id":10,
+                "trackName":"Ak kepterim",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_77219.mp3",
+                "id":11,
+                "trackName":"Super Info",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_76289.mp3",
+                "id":12,
+                "trackName":"Bilbepmin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_69111.mp3",
+                "id":13,
+                "trackName":"Kopolok",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_62133.mp3",
+                "id":14,
+                "trackName":"Adashtym",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_58663.mp3",
+                "id":15,
+                "trackName":"Znayu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_48591.mp3",
+                "id":16,
+                "trackName":"Ruhun ozgur",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46837.mp3",
+                "id":17,
+                "trackName":"Sarala",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46583.mp3",
+                "id":18,
+                "trackName":"Kara chan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_45661.mp3",
+                "id":19,
+                "trackName":"Sen ekoobuz",
+                "album":"", "artistName":"???????"
+            },
+
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43665.mp3",
+                "id":20,
+                "trackName":"Suluuluk saktap kalay duynonu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43215.mp3",
+                "id":21,
+                "trackName":"Pulya",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_3391.mp3",
+                "id":22,
+                "trackName":"Jash karek",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_863.mp3",
+                "id":23,
+                "trackName":" Nosonte",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_411.mp3",
+                "id":24,
+                "trackName":" Jurok Syzdait",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_90919.mp3",
+                "id":25,
+                "trackName":"Mol Bulak",
+                "album":"", "artistName":"???????"
+            }
+        ]
+},
+{
+    "info":{
+        "id":1,
+        "uniqueName" : "omar",
+        "name":"Omar",
+        "lastname":"",
+        "type":"????",
+        "thumbnail":"data/thumbnail/omar.jpeg",
+        "biography":"Omarrrrr 1987 ???? 16 ???????? ?????? ???????? ????????. ?? ???? ????? ????????? ????? ??????? — «??????? ?????» (?????? ??? — ? ???????? ? ???????????). ????? ??? ?????????? ???????? ??????????? ? ?????? «????? ??? ????» ???????? ???????? ????????? 14 ??????? ? ?????????? ???????????. ? ???? ????????????? ?????? ???????."
+    },
+    "song":
+        [
+            {
+                "id": 1,
+                "mp3":"http://media.super.kg/media/audio/a_90931.mp3",
+                "trackName":"Nege sen",
+                "album":"", "artistName":"???????",
+                "background" : "https://d3rmfllhinmkpo.cloudfront.net/musicartistavatars/2225203393/Apollo-Brown-Visions/web_chart"
+            },
+            {
+                "id": 1,
+                "mp3":"http://media.super.kg/media/audio/a_88521.mp3",
+                "trackName":"????? ????, ??????",
+                "album":"", "artistName":"????"
+            },
+            {
+                "id": 2,
+                "mp3" : "http://media.super.kg/media/audio/a_90923.mp3",
+                "trackName" : "Gorod",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "id": 3,
+                "mp3":"http://media.super.kg/media/audio/a_91155.mp3",
+                "trackName":"Esimde(folk)",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "id": 4,
+                "mp3":"http://media.super.kg/media/audio/a_87771.mp3",
+                "trackName":"Turnalar",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "id": 5,
+                "mp3":"http://media.super.kg/media/audio/a_86493.mp3",
+                "trackName":"Nege sen?",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_231.mp3",
+                "id":6,
+                "trackName":"Zaman",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_85461.mp3",
+                "id":7,
+                "trackName":"Kyrgyzstan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_81277.mp3",
+                "id":8,
+                "trackName":"Mekenim menin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_79665.mp3",
+                "id":9,
+                "trackName":"Sadagam",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_78373.mp3",
+                "id":10,
+                "trackName":"Ak kepterim",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_77219.mp3",
+                "id":11,
+                "trackName":"Super Info",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_76289.mp3",
+                "id":12,
+                "trackName":"Bilbepmin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_69111.mp3",
+                "id":13,
+                "trackName":"Kopolok",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_62133.mp3",
+                "id":14,
+                "trackName":"Adashtym",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_58663.mp3",
+                "id":15,
+                "trackName":"Znayu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_48591.mp3",
+                "id":16,
+                "trackName":"Ruhun ozgur",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46837.mp3",
+                "id":17,
+                "trackName":"Sarala",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46583.mp3",
+                "id":18,
+                "trackName":"Kara chan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_45661.mp3",
+                "id":19,
+                "trackName":"Sen ekoobuz",
+                "album":"", "artistName":"???????"
+            },
+
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43665.mp3",
+                "id":20,
+                "trackName":"Suluuluk saktap kalay duynonu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43215.mp3",
+                "id":21,
+                "trackName":"Pulya",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_3391.mp3",
+                "id":22,
+                "trackName":"Jash karek",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_863.mp3",
+                "id":23,
+                "trackName":" Nosonte",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_411.mp3",
+                "id":24,
+                "trackName":" Jurok Syzdait",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_90919.mp3",
+                "id":25,
+                "trackName":"Mol Bulak",
+                "album":"", "artistName":"???????"
+            }
+        ],
+    "fan":
+        [
+            {
+                "mp3":"http://media.super.kg/media/audio/a_231.mp3",
+                "id":6,
+                "trackName":"Zaman",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_85461.mp3",
+                "id":7,
+                "trackName":"Kyrgyzstan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_81277.mp3",
+                "id":8,
+                "trackName":"Mekenim menin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_79665.mp3",
+                "id":9,
+                "trackName":"Sadagam",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_78373.mp3",
+                "id":10,
+                "trackName":"Ak kepterim",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_77219.mp3",
+                "id":11,
+                "trackName":"Super Info",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_76289.mp3",
+                "id":12,
+                "trackName":"Bilbepmin",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_69111.mp3",
+                "id":13,
+                "trackName":"Kopolok",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_62133.mp3",
+                "id":14,
+                "trackName":"Adashtym",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_58663.mp3",
+                "id":15,
+                "trackName":"Znayu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_48591.mp3",
+                "id":16,
+                "trackName":"Ruhun ozgur",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46837.mp3",
+                "id":17,
+                "trackName":"Sarala",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_46583.mp3",
+                "id":18,
+                "trackName":"Kara chan",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_45661.mp3",
+                "id":19,
+                "trackName":"Sen ekoobuz",
+                "album":"", "artistName":"???????"
+            },
+
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43665.mp3",
+                "id":20,
+                "trackName":"Suluuluk saktap kalay duynonu",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_43215.mp3",
+                "id":21,
+                "trackName":"Pulya",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_3391.mp3",
+                "id":22,
+                "trackName":"Jash karek",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_863.mp3",
+                "id":23,
+                "trackName":" Nosonte",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_411.mp3",
+                "id":24,
+                "trackName":" Jurok Syzdait",
+                "album":"", "artistName":"???????"
+            },
+            {
+                "mp3":"http://media.super.kg/media/audio/a_90919.mp3",
+                "id":25,
+                "trackName":"Mol Bulak",
+                "album":"", "artistName":"Каныкей"
+            }
+        ]
+}
+]

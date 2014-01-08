@@ -1,0 +1,70 @@
+<div class="fluid" id="profile_page" ng-controller="TabCtrl">
+    <div class="widget grid12"  >
+        <tabset id="profile_tabset" >
+            <div class="tabbable">
+                <ul >
+
+                    <li ng-class="{active:isActive('/user/marattig')}" >
+                        <a href="#/user/{{ currentUserInfo.userName }}" >Профиль</a>
+                    <li ng-class="{active:isActive('/user/marattig/song')}">
+                        <a href="#/user/{{ currentUserInfo.userName }}/song">Ыр</a>
+                    <li ng-class="{active:isActive('/user/marattig/favorite')}">
+                        <a href="#/user/{{ currentUserInfo.userName }}/favorite">Favorites</a>
+                    </li>
+                    <li ng-class="{active:isActive('/user/marattig/playlist')}">
+                        <a href="#/user/{{ currentUserInfo.userName }}/playlist">Playlist</a>
+                    </li>
+                    <li ng-class="{active:isActive('/user/marattig/following')}">
+                        <a href="#/user/{{ currentUserInfo.userName }}/following">Followings</a>
+                    </li>
+                    <li ng-class="{active:isActive('/user/marattig/follower')}">
+                        <a href="#/user/{{ currentUserInfo.userName }}/follower">Followers</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </tabset>
+        <div id="profile_area">
+
+
+            <div id="profile_info">
+                <div id="profile_img">
+                    <img src="{{currentUserInfo.thumbnail}}" width="57" height="80">
+                </div>
+                <div class="profile_name">
+                    {{currentUserInfo.name +' ' + currentUserInfo.lastName}}
+                    <span>{{currentUserInfo.type}}</span>
+                </div>
+
+                <div class="numStats">
+                    <ul>
+                        <li><a title="">{{currentUserInfo.songLength}}</a><span>Ыр</span></li>
+                        <li><a  title="">{{currentUserInfo.playlistLength}}</a><span>Playlist</span></li>
+                        <li><a  title="">{{currentUserInfo.favoriteLength}}</a><span>Favorites</span></li>
+                        <li><a  title="">{{currentUserInfo.followingLength}}</a><span>Followings</span></li>
+                        <li class="last"><a title="">{{currentUserInfo.followerLength}}</a><span>Followers</span></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="float_right">
+                <div id="profile_info_social">
+                    <a class="buttonM bDefault"><span class="icos-play"></span><span>Ойнот</span></a>
+                    <a class="buttonM bDefault"><span class="icos-share"></span><span>Бөлүш</span></a>
+                    <a class="buttonM bDefault"><span class="icos-add"></span><span>Кош</span></a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+<div style="height: 140px"></div>
+{{mediaResults.info[0].biography}}

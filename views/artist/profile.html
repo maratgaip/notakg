@@ -1,0 +1,32 @@
+<div ng-include src="'views/artist/tab.html'"></div>
+<div class="grid12" id="profile_songs">
+    <div ng-repeat="item in currentUserRecentSong" class="artist-tile artist-tile-cover js-track itunes-available" data-id="148076" data-playlist-id="black_milk_followers_playlist">
+        <a class="artist-details">
+            <img class="artist-image loaded" src="{{item.background}}">
+        </a>
+        <div class="action-btns">
+            <i class="iconmusic-tile-explicit"></i>
+            <a class="no-url-update play"  ng-click="playVideo(item)"></a>
+
+        </div>
+        <a class="artist-name">
+            <div class="artist-details">
+                <span class="artist-full-name" data-id="18710504">{{item.trackName}}</span>
+                <span class="artist-track-name" data-id="18710504">{{ item.artistName }}</span>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

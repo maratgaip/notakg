@@ -1,0 +1,5 @@
+<div ng-include src="'views/user/tab.html'"></div>
+                <div ng-repeat="playlist in currentUserPlaylist">
+<a href="#/user/{{  currentUserInfo.userName}}/playlist/{{playlist.playlistName}}">{{  playlist.playlistName}}</>
+                    </div>
+
