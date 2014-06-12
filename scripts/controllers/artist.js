@@ -6,4 +6,6 @@ obonApp.controller('ArtistCtrl', function ($scope, $http, $location) {
         return route === $location.path();
     }
 
+    console.log('test');
+
 });
