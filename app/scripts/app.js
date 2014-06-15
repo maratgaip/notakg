@@ -1,6 +1,6 @@
 'use strict';
 
-var obonApp = angular.module('appsApp', ['ngGrid', 'ngCookies','ngResource', 'apiServices', 'ui.bootstrap', 'ui.directives',  ]);
+var obonApp = angular.module('appsApp', ['ngGrid', 'ngCookies','ngResource', 'apiServices', 'ui.bootstrap', 'ui.directives', 'firebase' ]);
 
 // APPLICATION CONFIGURATION
 
@@ -88,6 +88,10 @@ obonApp.config(function ($routeProvider) {
         .when('/register', {
             templateUrl: 'views/register.html',
             controller: 'RegisterCtrl'
+        })
+        .when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginCtrl'
         })
         .otherwise({
             //redirectTo: '/'

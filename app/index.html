@@ -53,29 +53,18 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 <script src="http://mgcrea.github.com/angular-strap/js/angular-strap.js"></script>
 
-<!-- firebase login js -->
-<script type='text/javascript'
-        src='https://cdn.firebase.com/js/simple-login/1.5.0/firebase-simple-login.js'>
-</script>
 
+<!-- firebase login js -->
+<script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+<script src="//cdn.firebase.com/js/simple-login/1.5.0/firebase-simple-login.js"></script>
+<!-- AngularFire Library -->
+<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
 
 <link href="http://mgcrea.github.com/angular-strap/css/prettify.css" rel="stylesheet">
 
 
 
-
-
-<!-- build:js scripts/scripts.js -->
-
-    <script src="scripts/app.js"></script>
-    <script src="scripts/services/connectAPI.js"></script>
-    <script src="scripts/controllers/index.js"></script>
-    <script src="scripts/controllers/profile.js"></script>
-    <script src="scripts/controllers/search.js"></script>
-    <script src="scripts/controllers/artist.js"></script>
-<script src="scripts/controllers/tab.js"></script>
-    <!-- endbuild -->
- <div ng-controller="IndexCtrl">
+<div ng-controller="IndexCtrl">
 <!-- Header ============ -->	
 <div id="top">
     <div class="wrapper">
@@ -200,28 +189,26 @@
 ============ -->
 
 	<footer>
-
         <div>
-                <span>{{title | capitalize}}</span>
-
-                <small>by <cite>{{artist}}</cite></small>
-
+            <span>{{title | capitalize}}</span>
+            <small>by <cite>{{artist}}</cite></small>
             <audio id="vid" style="width:100%" height="240" video-loader autoplay controls>
                 <source id="vidsrc" ng-src="url" type="video/mp4">
             </audio>
         </div>
-
-
-
-
-
     </footer>
-  	
 
+    <!-- build:js scripts/scripts.js -->
 
-
-
-
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/connectAPI.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/profile.js"></script>
+    <script src="scripts/controllers/search.js"></script>
+    <script src="scripts/controllers/artist.js"></script>
+    <script src="scripts/controllers/tab.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <!-- endbuild -->
 
 
 
