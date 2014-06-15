@@ -1,0 +1,26 @@
+{
+    "name": "nota",
+    "description": "An audio platform that allows user to listen music and create playlists",
+    "keywords": ["music", "audio"],
+    "version": "0.0.1",
+    "homepage": "https://github.com/maratgaip/notakg",
+    "repository": "https://github.com/maratgaip/notakg",
+    "author": "Burhan COKCA <bcokca@gmail.com> (http://burhancokca.com) && Marat GAIPOV (http://aratgaipov.com)",
+    "main": "index",
+
+    "dependencies": {
+        "grunt": "~0.4.2",
+        "hapi": "~1.8.3",
+        "formidable": "1.0.13",
+        "mysql": "*",
+        "async": "*",
+        "redis" : "*"
+
+    },
+    "devDependencies": {
+        "grunt-exec": "latest",
+        "grunt": "~0.4.2",
+        "grunt-cli": "latest",
+        "grunt-githooks": "latest"
+    }
+}
