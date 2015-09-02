@@ -1,7 +1,7 @@
 NOTA
 =======================
 
-This is a sample music application to demonstrate how to use angularJS in music streaming service. Its basically let users login to system with one of their social media accounts (facebook, twitter, github and etc) and have post on the chat page. (now you can log in with username "marattig" no password)
+This is a sample music application to demonstrate how to use angularJS in music streaming service. Its basically let users login to system with one of their social media accounts (facebook, twitter, github and etc) and search/play music. (now you can log in with username "marattig" no password)
 
 Right now it supports twitter and facebook for login, but soon other platforms will be added.
 
